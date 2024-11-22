@@ -30,7 +30,7 @@ jobs:
           echo "ФИО: ${{ env.FULL_NAME }}"
           echo "Номер группы: ${{ env.GROUP_NUMBER }}"
           echo "Ник GitHub: ${{ github.actor }}"
-			
+
       # Установка python
       - name: Set up Python 3.13
         uses: actions/setup-python@v4
