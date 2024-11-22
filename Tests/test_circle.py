@@ -3,6 +3,7 @@ import math
 
 from circle import area, perimeter
 
+
 class TestCircle(unittest.TestCase):
     def test_area(self):
         radius = 1
@@ -23,6 +24,7 @@ class TestCircle(unittest.TestCase):
         radius = 0
         result = perimeter(radius)
         self.assertEqual(result, 0)
+
 
 if __name__ == '__main__':
     unittest.main()

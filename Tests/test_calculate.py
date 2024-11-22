@@ -9,7 +9,7 @@ class TestCalculate(unittest.TestCase):
         size = [1]
         result = calc(fig, func, size)
         self.assertEqual(result, 3.141592653589793)
-        
+
     def test_square_area(self):
         fig = 'square'
         func = 'area'
