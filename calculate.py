@@ -45,7 +45,7 @@ if __name__ == "__main__":
     while func not in funcs:
         func = input(f"Enter function name, avaliable are {funcs}:\n")
     while len(size) != sizes.get(f"{func}-{fig}", 1):
-        prompt = "Input figure sizes separated by space, 1 for circle and square:\n"
+        prompt = "Input figure sizes by space, 1 for circle and square:\n"
         input_str = input(prompt)
         size = list(map(int, input_str.split()))
     calc(fig, func, size)
