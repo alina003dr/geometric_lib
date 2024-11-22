@@ -1,11 +1,9 @@
-name: Tests Workflow
-
-
 on:
   push:
     branches:
       - master
       - release
+      - feat-tests
   pull_request:
     branches:
       - master
