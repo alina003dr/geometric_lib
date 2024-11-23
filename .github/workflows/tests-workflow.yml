@@ -1,12 +1,11 @@
 on:
   push:
     branches:
-      - master
+      - main
       - release
-      - feat-tests
   pull_request:
     branches:
-      - master
+      - main
       - release
       - develop
 
