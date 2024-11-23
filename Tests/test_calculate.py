@@ -10,6 +10,8 @@ class TestCalculate(unittest.TestCase):
         result = calc(fig, func, size)
         self.assertEqual(result, 3.141592653589793)
 
+    assert all(s >= 0 for s in size)
+
     def test_square_area(self):
         fig = 'square'
         func = 'area'
