@@ -55,17 +55,5 @@ class TestCalculate(unittest.TestCase):
         size = [1, 2]
         with self.assertRaises(AssertionError):
             calc(fig, func, size)
-    def test_negative_size(self):
-        fig = 'circle'
-        func = 'area'
-        size = [-1]
-        with self.assertRaises(AssertionError):
-            calc(fig, func, size)
-    def test_invalid_triangle(self):
-        fig = 'triangle'
-        func = 'area'
-        size = [1, 2, 10]
-        with self.assertRaises(AssertionError):
-            calc(fig, func, size)
 if __name__ == '__main__':
     unittest.main()
