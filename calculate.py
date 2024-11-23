@@ -24,12 +24,6 @@ def calc(fig, func, size):
     expected_args = sizes.get(key)
     assert expected_args is not None
     assert len(size) == expected_args
-    # Проверка аргумента на неотрицание
-    assert all(s >= 0 for s in size)
-    # Проверка существование тругольника
-    if fig == 'triangle':
-        a, b, c = size
-        assert a + b > c and a + c > b and c + b > a
     # Вызов функции
     module = globals()[fig]
     result = getattr(module, func)(*size)
