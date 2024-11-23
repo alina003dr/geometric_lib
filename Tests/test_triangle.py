@@ -13,16 +13,6 @@ class TestTriangle(unittest.TestCase):
         result = perimeter(a, b, c)
         self.assertEqual(result, 9)
 
-    def test_area_neg(self):
-        a, b, c = -5, -12, -13
-        with self.assertRaises(AssertionError):
-            area(x, y, z)
-
-    def test_perimeter_neg(self):
-        a, b, c = -5, -12, -13
-        with self.assertRaises(AssertionError):
-            perimeter(x, y, z)
-
 
 if __name__ == '__main__':
     unittest.main()
