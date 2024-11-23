@@ -13,10 +13,6 @@ class TestTriangle(unittest.TestCase):
         result = perimeter(a, b, c)
         self.assertEqual(result, 9)
 
-    if fig == 'triangle':
-        a, b, c = size
-        assert a + b > c and a + c > b and c + b > a
-
 
 if __name__ == '__main__':
     unittest.main()
