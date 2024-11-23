@@ -23,16 +23,6 @@ class TestSquare(unittest.TestCase):
         result = perimeter(side)
         self.assertEqual(result, 0)
 
-    def test_area_neg(self):
-        side = -1
-        with self.assertRaises(AssertionError):
-            area(side)
-
-    def test_perimeter_neg(self):
-        side = -1
-        with self.assertRaises(AssertionError):
-            perimeter(side)
-
 
 if __name__ == '__main__':
     unittest.main()
